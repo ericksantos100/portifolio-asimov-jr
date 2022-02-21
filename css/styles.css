@@ -1,0 +1,376 @@
+/*index---------------------------------*/
+
+html, body {
+
+    background-color: #363946;
+    padding: 0; /*distancia entre conteudo e sua borda*/
+    font-family: 'Montserrat', sans-serif;
+}
+.navigation {
+    background-color: #4F5D75; 
+    color: white;
+    height: 50px;
+    animation-name:  navegacao;
+    animation-duration: 2s;
+    
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.navigation a:hover{
+    color: black;
+    opacity: 0.5;
+}
+.navigation ul {
+    margin-top: 0;
+    list-style: none; /* tira pontos ou numeraçao de lista*/
+    padding-left: 0;
+    text-align: center;
+    height: 50px;
+    font-size: 17px;
+   
+}   
+
+.navigation li{
+    display: inline-block; /*deixa elementos na mesma linha*/
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    
+   
+}
+
+.capa {
+    margin-top: 30px;
+}
+
+.capa span{
+    color: #4582ac;
+    display: block;
+    text-align: center;
+}
+
+.capa h1 {
+    text-align: center;
+}
+
+
+.profile-pic img {
+    width: 250px;
+    margin-top: 30px;
+    border-radius: 350px;
+}
+
+.profile-pic {
+    text-align: center;
+    animation-name: profile-capa;
+    animation-duration: 2s;
+}
+
+
+.profile-title {
+    text-align: center;   
+    color: white;
+    vertical-align: top;
+   
+
+}
+
+.profile-title h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 40px;
+    animation-name: profile-titulo;
+    animation-duration: 2s;
+}
+.profile-title h2 {
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.navigation li.threeline-icon {
+    display: none;
+}
+
+.caminho a {
+    color: #4582ac;
+}
+
+.back-link {
+   color: #4582ac;
+
+}
+/*curriculo-----------------------------------------------*/
+
+.main {
+    padding: 30px 300px 40px 300px;
+   /*padding-top: 30px;
+     padding-right:50;
+     padding-bottom: 40px;
+     padding-left: 40px; */
+     animation-name: conteudo;
+     animation-duration: 2s;
+}
+
+.main h1 {
+    color: white;
+    font-weight: normal;
+}
+
+.curriculo {
+    color: black;
+}
+
+.navigation ul span {
+    color: black;
+    font-size: 20px;
+}
+
+.cv-pic {
+    float: right;
+    margin-left: 15px;
+    width: 375px;
+    
+}
+
+.main hr{
+    margin-top: -15px;
+}
+
+.main h2 {
+    color: white;
+    font-weight: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.main h3{
+    font-size: 12px;
+    color: #4582ac;
+    text-transform: uppercase;
+}
+
+.main p {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.caminho {
+    list-style: none;
+    padding-left: 0;
+    color: #4582ac;   
+}
+
+.caminho li{
+    display: inline-block;  
+}
+
+/*Contatos---------------------------------*/
+
+.social-img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.contatos {
+    color:black;
+}
+
+/*portifolio-------------------------------------*/
+
+.main-portifolio {
+    padding: 30px 200px 40px 250px
+   /*padding-top: 30px
+     padding-right:50;
+     padding-bottom: 40px;
+     padding-left: 40px; */
+}
+
+.main-portifolio {
+    display: inline;
+}
+
+.main-portifolio h1 {
+    color: white;
+    font-weight: normal;
+}
+.portifolio {
+    color: black;
+}
+
+.miniatura {
+    width: 250px;
+    height: 250px; 
+}
+
+.miniatura {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a {
+    text-decoration: none; /*tira o sublinhado do texto, neste caso do link*/
+}
+
+.blackbox {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 120px;
+}
+
+.blackbox:hover { /*hover é uma açao que so acontece quando o cursor estiver sobre o lemento*/
+    opacity: 0.7; /*70% opaco*/
+    transition: 1s;
+}
+.blackbox-text h1 {
+    font-size: 16px;
+    color: #4582ac;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.blackbox-text h2 {
+    font-size: 16px;
+    color: white;
+    text-transform: none;
+    font-weight: 100;
+    margin-top: 0;
+    margin-left: 20px;
+}
+/*trabalhos-----------------------------------*/
+
+.foto-trabalhos {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.serviços {
+    color: white;
+    font-size: none;
+}
+
+/*animaçoes------------------*/
+
+@keyframes profile-capa {
+    0% {opacity: 0; transform: translate(0px, -20px)}
+    100% {opacity: 1;transform: translate(0px,0px)}
+}
+
+@keyframes profile-titulo {
+    0% {opacity: 0; transform: translate(0px,20px)}
+    100% {opacity: 1;transform: translate(0px,0px)}
+}
+
+@keyframes navegacao {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    100% {opacity: 1;}
+}
+
+@keyframes conteudo {
+    0% {opacity: 0; transform: translate(-20px,0px)}
+    100% {opacity: 1;transform: translate(0px,0px)}
+}
+/*media query--------------usado para abrir o site no celular-*/
+
+@media (max-width: 800px){
+    .capa div {
+        display: block;
+        height: auto;
+        
+    }
+    
+    .threeline-icon {
+       font-size: 30px;
+    }
+
+    .navigation li {
+        display: none;
+    }
+    .navigation li.threeline-icon{
+        display: inline-block;
+    }
+    .navigation li.threeline-icon:hover{
+        color: #4582ac;
+        cursor: pointer;
+    }
+    
+    .profile-pic {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .profile-title {
+        width: 100%;
+    }
+    .profile-pic img {
+        margin-top: 0;
+        
+        max-width: 80%;
+    }
+    .profile-title h1 {
+        margin-top: 0;
+        
+    }
+    .profile-title h2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .main {
+        padding: 10px 5% 40px 5%;
+    }
+    .main p {
+        text-align: left;
+    }
+
+    .cv-pic {
+        float: none;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .caminho li {
+        font-size: 18px;
+    }
+
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%; 
+    }
+
+    .blackbox {
+        opacity: 0.5;
+    }
+/* javascript-----------------------*/
+    .menujs {
+        height: auto;
+    }
+    .menujs ul {
+        height: auto;
+        padding-right: 15%;
+        padding-left: 15%;
+        padding-bottom: 5%;
+    }
+
+    .menujs li {
+        display: block;
+        border-bottom: solid white 2px;
+        width: 100%;
+        padding: 0;
+    }
+
+}
